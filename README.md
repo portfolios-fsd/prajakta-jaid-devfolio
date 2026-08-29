@@ -1,6 +1,6 @@
 # Dev Showcase
 
-Build a modern, responsive personal portfolio website for a Full Stack Developer. 
+Build a modern, responsive personal portfolio website for a Full Stack Developer.
 
 Key requirements:
 
@@ -20,29 +20,19 @@ Key requirements:
 
 - **Technical Stack**: React (frontend), Node.js/Express (backend), MongoDB/PostgreSQL (database). Deployable on Vercel.
 
-- **Extra Features**: 
+- **Extra Features**:
 
-   - Dark/light mode toggle
+  - Dark/light mode toggle
 
-   - Responsive design for mobile and desktop
+  - Responsive design for mobile and desktop
 
-   - SEO‑friendly structure
+  - SEO‑friendly structure
 
-   - Easy to extend with blog posts or case studies later
+  - Easy to extend with blog posts or case studies later
 
 Goal: A professional portfolio site that highlights my skills, experience, and projects, making a strong impression for recruiters and clients.
 
 sharing here my resume also take content from that resume
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c52fcae5-9b2a-406e-8e97-3fc74886edbb).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 

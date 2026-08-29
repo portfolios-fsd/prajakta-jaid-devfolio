@@ -6,13 +6,12 @@ export const profile = {
   location: "Pune, India",
   email: "jaidprajakta28@gmail.com",
   phone: "+91 74200 64945",
-  linkedin: "https://www.linkedin.com/in/prajakta-jaid",
+  linkedin: "https://www.linkedin.com/in/prajakta-jaid-a13430155",
   github: "https://github.com/prajaktajaid",
 };
 
 export const stats = [
   { value: "5+", label: "Years experience" },
-  { value: "20%", label: "Faster execution" },
   { value: "4", label: "Cloud certifications" },
 ];
 
@@ -25,7 +24,15 @@ export const about = [
 export const skillGroups = [
   {
     label: "Core Backend",
-    items: ["Java 8/J2EE", "Spring Boot", "Microservices", "REST/SOAP", "GraphQL", "Hibernate/JPA", "Node.js"],
+    items: [
+      "Java 8/J2EE",
+      "Spring Boot",
+      "Microservices",
+      "REST/SOAP",
+      "GraphQL",
+      "Hibernate/JPA",
+      "Node.js",
+    ],
   },
   {
     label: "Frontend",
@@ -97,13 +104,107 @@ export const education = {
   detail: "CGPA 8.84 · Jul 2021",
 };
 
-export const certifications = [
-  "Azure Developer Associate (AZ-204)",
-  "Azure Fundamentals (AZ-900)",
-  "Google Cloud Associate Cloud Engineer",
-  "Cloud DevOps — upGrad",
-  "Apache Kafka Foundations",
-  "Generative AI Level 101",
-  "GitHub Copilot GenAI: Platform Engineering",
-  "Front-end Development with React",
+export interface Certification {
+  title: string;
+  code?: string;
+  issuer: string;
+  badgeType:
+    | "microsoft"
+    | "googlecloud"
+    | "upgrad"
+    | "coursera"
+    | "cognixia"
+    | "kodekloud"
+    | "newrelic"
+    | "aws"
+    | "github"
+    | "linkedin"
+    | "kafka";
+  skills: string[];
+}
+
+export const certifications: Certification[] = [
+  {
+    title: "Microsoft Certified: Azure Developer Associate",
+    code: "AZ-204",
+    issuer: "Microsoft",
+    badgeType: "microsoft",
+    skills: [
+      "Azure App Services",
+      "Azure Functions",
+      "Cosmos DB",
+      "Cloud Security",
+      "Blob Storage",
+    ],
+  },
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    code: "AZ-900",
+    issuer: "Microsoft",
+    badgeType: "microsoft",
+    skills: ["Cloud Concepts", "Azure Architecture", "Governance & Compliance", "Cost Management"],
+  },
+  {
+    title: "Google Cloud Certified: Associate Cloud Engineer",
+    code: "ACE",
+    issuer: "Google Cloud",
+    badgeType: "googlecloud",
+    skills: ["Google Compute Engine", "GKE / Kubernetes", "Cloud IAM", "VPC Networking"],
+  },
+  {
+    title: "Cloud DevOps Certification",
+    code: "DevOps",
+    issuer: "upGrad",
+    badgeType: "upgrad",
+    skills: ["Docker", "Kubernetes (K8s)", "Jenkins CI/CD", "Infrastructure as Code"],
+  },
+  {
+    title: "Learn By Doing: Beginner's Guide to Apache Kafka - Foundations and Development",
+    code: "Kafka",
+    issuer: "KodeKloud",
+    badgeType: "kodekloud",
+    skills: ["Event Streaming", "Topic Partitions", "Producers & Consumers", "Kafka Brokers"],
+  },
+  {
+    title: "Docker & Kubernetes DevOps Certification",
+    code: "K8s",
+    issuer: "KodeKloud",
+    badgeType: "kodekloud",
+    skills: ["Kubernetes Architecture", "Pod Scheduling", "Ingress & Services", "Helm Charts"],
+  },
+  {
+    title: "Front-End Development with React",
+    code: "React",
+    issuer: "Coursera",
+    badgeType: "coursera",
+    skills: ["React 18", "Hooks & State", "TypeScript", "Component Architecture"],
+  },
+  {
+    title: "Full Stack Observability",
+    code: "APM",
+    issuer: "New Relic",
+    badgeType: "newrelic",
+    skills: ["APM Metrics", "Distributed Tracing", "Log Analysis", "Alerting & SLIs"],
+  },
+  {
+    title: "AWS Cloud Computing 101",
+    code: "AWS",
+    issuer: "Amazon Web Services",
+    badgeType: "aws",
+    skills: ["EC2 & S3", "IAM Security", "VPC & CloudWatch", "Serverless Basics"],
+  },
+  {
+    title: "GitHub Copilot GenAI Persona: Platform Engineering",
+    code: "GenAI",
+    issuer: "Cognixia",
+    badgeType: "cognixia",
+    skills: ["Copilot CLI", "Prompt Engineering", "Automated Testing", "CI/CD Actions"],
+  },
+  {
+    title: "Generative AI Level 101",
+    code: "AI 101",
+    issuer: "Cognixia",
+    badgeType: "cognixia",
+    skills: ["LLM Fundamentals", "Prompt Architecture", "AI Ethics", "Agentic Systems"],
+  },
 ];
