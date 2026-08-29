@@ -1,14 +1,48 @@
-# Welcome to your Lovable project
+# Dev Showcase
+
+Build a modern, responsive personal portfolio website for a Full Stack Developer. 
+
+Key requirements:
+
+- **Homepage**: Clean hero section with my name, title ("Full Stack Developer"), and a short tagline. Include a professional photo or avatar.
+
+- **About Section**: Brief bio highlighting skills, experience, and passion for backend + frontend development.
+
+- **Skills Section**: Showcase technical skills (Java, Node.js, React, databases, cloud deployment, AI integration).
+
+- **Experience Section**: Timeline or cards for past roles/projects (PixelWebServices, JobRadar, etc.).
+
+- **Projects Section**: Interactive cards with project screenshots, descriptions, and links (GitHub, live demos).
+
+- **Contact Section**: Simple form + social links (LinkedIn, GitHub, email).
+
+- **Design Style**: Minimalist, professional, with subtle animations. Use a modern color palette (blue/teal/white or similar).
+
+- **Technical Stack**: React (frontend), Node.js/Express (backend), MongoDB/PostgreSQL (database). Deployable on Vercel.
+
+- **Extra Features**: 
+
+   - Dark/light mode toggle
+
+   - Responsive design for mobile and desktop
+
+   - SEO‑friendly structure
+
+   - Easy to extend with blog posts or case studies later
+
+Goal: A professional portfolio site that highlights my skills, experience, and projects, making a strong impression for recruiters and clients.
+
+sharing here my resume also take content from that resume
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c52fcae5-9b2a-406e-8e97-3fc74886edbb).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +54,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
