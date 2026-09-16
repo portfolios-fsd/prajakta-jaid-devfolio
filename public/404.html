@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajakta Jaid — Portfolio</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      const segmentCount = 1;
+      const l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + segmentCount)
+            .join("/") +
+          "/?p=/" +
+          l.pathname.slice(1).split("/").slice(segmentCount).join("/").replace(/&/g, "~and~") +
+          (l.search ? "&q=" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash,
+      );
+    </script>
+  </head>
+  <body
+    style="
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    "
+  >
+    <div>
+      <h1 style="font-size: 2rem; margin-bottom: 0.5rem">Redirecting to Portfolio…</h1>
+      <p style="color: #94a3b8">
+        <a href="./" style="color: #38bdf8; text-decoration: none"
+          >Click here if not redirected automatically</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

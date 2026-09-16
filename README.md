@@ -1,46 +1,72 @@
-# Dev Showcase
+# Prajakta Jaid — Full Stack Developer Portfolio Showcase
 
-Build a modern, responsive personal portfolio website for a Full Stack Developer.
+A modern, high-performance personal portfolio website built with **React 19, TypeScript, Tailwind CSS, TanStack Router**, and configured for automated static deployment to **GitHub Pages**.
 
-Key requirements:
+🔗 **Live URL (GitHub Pages)**: `https://portfolios-fsd.github.io/prajakta-jaid-devfolio/`
 
-- **Homepage**: Clean hero section with my name, title ("Full Stack Developer"), and a short tagline. Include a professional photo or avatar.
+---
 
-- **About Section**: Brief bio highlighting skills, experience, and passion for backend + frontend development.
+## ✨ Features
 
-- **Skills Section**: Showcase technical skills (Java, Node.js, React, databases, cloud deployment, AI integration).
+- ⚡ **Hero & Dynamic Code Window**: Interactive developer config overview showcasing core stack (Java, Spring Boot, React, Kafka, Azure, GCP).
+- 🔍 **Interactive Skills Explorer**: Filterable skills toolkit with instant keyword search and category tags.
+- 📜 **Verified Certifications Matrix**: Badges and credentials for Microsoft (AZ-204, AZ-900), Google Cloud (ACE), KodeKloud (Kafka, Docker, Kubernetes), New Relic Observability, and Coursera.
+- 💼 **Experience Timeline**: Career history at Nitor Infotech, Volkswagen IT Services, Accenture, and DXC Technology with quantified impact metrics.
+- 🚀 **Projects Showcase**: Interactive cards featuring browser mockup headers, live demo links, architecture tags, and feature summaries.
+- 📄 **Resume Hub**: One-click download of `Prajakta_Jaid_Resume.pdf` and in-browser preview.
+- 📬 **Interactive Contact & Quick-Copy**: Email quick-copy button with toast notifications, direct contact mailto form, and social links.
+- 🌓 **Dark / Light Mode**: System auto-detection with persistent local storage theme toggle.
+- 📱 **Fully Responsive**: Mobile hamburger drawer navigation, fluid typography, and sticky header.
+- 🚀 **Automated GitHub Pages CI/CD**: Seamless deployment on push via GitHub Actions.
 
-- **Experience Section**: Timeline or cards for past roles/projects (PixelWebServices, JobRadar, etc.).
+---
 
-- **Projects Section**: Interactive cards with project screenshots, descriptions, and links (GitHub, live demos).
+## 🚀 GitHub Pages Deployment Setup
 
-- **Contact Section**: Simple form + social links (LinkedIn, GitHub, email).
+This repository includes an automated GitHub Actions deployment workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-- **Design Style**: Minimalist, professional, with subtle animations. Use a modern color palette (blue/teal/white or similar).
+### One-Time Setup in GitHub Repository:
 
-- **Technical Stack**: React (frontend), Node.js/Express (backend), MongoDB/PostgreSQL (database). Deployable on Vercel.
+1. In your GitHub repository (`portfolios-fsd/prajakta-jaid-devfolio`), click on **Settings**.
+2. In the left sidebar, select **Pages** (under _Code and automation_).
+3. Under **Build and deployment** → **Source**, select **GitHub Actions**.
+4. Push any changes to the `main` branch. GitHub Actions will automatically build the static SPA and publish it to GitHub Pages.
 
-- **Extra Features**:
+---
 
-  - Dark/light mode toggle
+## 💻 Local Development
 
-  - Responsive design for mobile and desktop
+### Prerequisites
 
-  - SEO‑friendly structure
+- Node.js 20+
+- npm
 
-  - Easy to extend with blog posts or case studies later
+### Installation & Running
 
-Goal: A professional portfolio site that highlights my skills, experience, and projects, making a strong impression for recruiters and clients.
+```bash
+# Clone the repository
+git clone https://github.com/portfolios-fsd/prajakta-jaid-devfolio.git
+cd prajakta-jaid-devfolio
 
-sharing here my resume also take content from that resume
+# Install dependencies
+npm install
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+# Start local development server
 npm run dev
+
+# Build production static bundle for GitHub Pages
+npm run build
+
+# Preview production build locally
+npm run preview
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: React 19, TypeScript, TanStack Router
+- **Styling**: Tailwind CSS v4, tw-animate-css, Lucide React icons
+- **Components & Feedback**: Radix UI primitives, Sonner toasts
+- **Build Tool**: Vite 8 with `@vitejs/plugin-react` & `@tanstack/router-plugin`
+- **Hosting**: GitHub Pages with GitHub Actions CI/CD

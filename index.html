@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajakta Jaid — Full Stack Developer & Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Prajakta Jaid, Senior Software Engineer specialising in Java, Spring Boot, React, Kafka, cloud-native delivery (Azure & GCP) and AI integration."
+    />
+    <meta name="author" content="Prajakta Jaid" />
+    <meta
+      name="keywords"
+      content="Prajakta Jaid, Full Stack Developer, Senior Software Engineer, Java, Spring Boot, React, TypeScript, Kafka, Microservices, Azure, Docker, Kubernetes"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prajakta Jaid — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Senior Software Engineer with 5+ years building scalable Java & Spring Boot services, event-driven systems with Kafka, and modern React interfaces."
+    />
+    <meta property="og:site_name" content="Prajakta Jaid Portfolio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prajakta Jaid — Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Senior Software Engineer building scalable Java, Spring Boot, React, and cloud-native systems."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Prevent Theme Flash -->
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (stored === "dark" || (!stored && prefersDark)) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

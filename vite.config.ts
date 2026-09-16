@@ -1,31 +1,32 @@
 import { defineConfig } from "vite";
-import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tailwindcss from "@tailwindcss/vite";
-import tsconfigPaths from "vite-tsconfig-paths";
 import viteReact from "@vitejs/plugin-react";
-import { nitro } from "nitro/vite";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-export default defineConfig(({ command }) => ({
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig({
   plugins: [
-    tailwindcss(),
-    tsconfigPaths({ projects: ["./tsconfig.json"] }),
-    tanstackStart({
-      server: { entry: "server" },
+    tanstackRouter({
+      routesDirectory: "./src/routes",
+      generatedRouteTree: "./src/routeTree.gen.ts",
+      target: "react",
+      autoCodeSplitting: false,
     }),
+    tailwindcss(),
     viteReact(),
-    ...(command === "build" ? [nitro()] : []),
   ],
+  base: process.env.BASE_PATH || "./",
   resolve: {
     alias: {
-      "@": "/src",
+      "@": path.resolve(__dirname, "./src"),
     },
-    dedupe: [
-      "react",
-      "react-dom",
-      "react/jsx-runtime",
-      "react/jsx-dev-runtime",
-      "@tanstack/react-query",
-      "@tanstack/query-core",
-    ],
+    dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
   },
-}));
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
+});
